@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <script src="https://kit.fontawesome.com/8c4c30dea9.js" crossorigin="anonymous"></script> -->
+	<meta name="msapplication-TileColor" content="#9b59b6">
+	<meta name="theme-color" content="#9b59b6">
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="forms">
+			<div class="forms__body">
+				<div class="forms__block block-recovery"> 
+					<a href="" class=" block-recovery__title title-block-forms">
+						Восстановление пароля
+					</a>
+					<div class='container'>
+					<form method="GET" enctype="multipart/form-data" action="#" class="form form-recovery">
+						<label class="form-recovery__label-mail" for="input-mail">Введите Email, на него будет выслан новый пароль </label>
+						<div  class="form__input form-recovery__input form-recovery__input_mail">
+							<input name="form[]" value="" required id="input-mail" autocomplete="off" placeholder="Почта*" type="email" class="input input_mail">
+						</div>
+						<a href="" class="form-recovery__return">
+							<span>Вернуться в форму авторизации </span>
+						</a>
+						<button type="submit" class="form__button form-recovery__button">
+							<span>
+								Отправить
+							</span>
+						</button>
+					</form>
+					<span class="block-recovery__text">
+						* Если вы не получили письмо с паролем, проверьте папку Спам.
+					</span>
+					<div class="block-recovery__footer form-link">
+						<span class="form-link__text">У вас нет аккаунта?</span>
+						<a href="" class="form-link__link">
+							<span>Регистрация</span>
+						</a>
+					</div>
+				</div>
+				</div>
+
+				<div class="forms__block  block-entry"> 
+					<a href="" class=" block-entry__title title-block-forms">
+						Вход
+					</a>
+					<div class='container'>
+					<form method="GET" enctype="multipart/form-data" action="#" class="form form-entry">
+						<div  class="form__input form-entry__input form-entry__input_mail">
+							<input name="form[]" value="" required id="input-mail" autocomplete="off" placeholder="Почта*" type="email" class="input input_mail">
+						</div>
+						<div  class="form__input form-entry__input form-entry__input_pass">
+							<input name="form[]" required id="input-mail" autocomplete="off" placeholder="Пароль*" type="password" class="input input_pass">
+						</div>
+						<div class="form__checkbox checkbox-block form-entry__checkbox">
+							<div class="checkbox-block__wrap">
+								<input id="memoryMe" type="checkbox" name="form[]" data-value="yes" class="checkbox-block__checkbox" />
+								<label class="checkbox-block__label" for="memoryMe">Запомнить меня </label>
+							</div>
+							<a href="" class="form-link__link">
+								<span>Забыли пароль?</span>
+							</a>
+						</div>
+						<button type="submit" class="form__button form-entry__button">
+							<span>
+								Войти
+							</span>
+						</button>
+						<div class="form-entry__social block-social">
+							<span class="block-social__title">
+								Войти через:
+							</span>
+							<ul class="block-social__list">
+								<li>
+									<a href="" class="block-social__link">
+										<img src="img/vk.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="" class="block-social__link">
+										<img src="img/f.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="" class="block-social__link">
+										<img src="img/od.png" alt="" />
+									</a>
+								</li>
+							</ul>
+						</div>
+					</form>
+					<div class="block-recovery__footer form-link">
+						<span class="form-link__text">У вас нет аккаунта? </span>
+						<a href="" class="form-link__link">
+							<span>Регистрация</span>
+						</a>
+					</div>
+				</div>
+				</div>
+
+				<div class="forms__block block-reg"> 
+					<a href="" class=" block-reg__title title-block-forms">
+						Регистрация
+					</a>
+					<div class='container'>
+					<form method="GET" enctype="multipart/form-data" action="#" class="form form-reg">
+						<div  class="form__input form-reg__input form-reg__input_name">
+							<input name="form[]" value="" required  autocomplete="on" placeholder="Имя*" type="text" class="input input_name">
+						</div>
+						<div  class="form__input form-reg__input form-reg__input_surname">
+							<input name="form[]" value="" required  autocomplete="on" placeholder="Фамилия*" type="text" class="input input_surname">
+						</div>
+						<div  class="form__input form-reg__input form-reg__input_login">
+							<input name="form[]" value="" required  autocomplete="on" placeholder="Логин*" type="text" class="input input_login">
+						</div>
+						<div  class="form__input form-reg__input form-reg__input_mail">
+							<input name="form[]" value="" required  autocomplete="off" placeholder="EMail*" type="email" class="input input_mail">
+						</div>
+						<div  class="form__input form-entry__input form-reg__input_pass">
+							<input name="form[]" required autocomplete="off" placeholder="Пароль*" type="password" class="input input_pass">
+						</div>
+						<div  class="form__input form-entry__input form-reg__input_repeat-pass">
+							<input name="form[]" required autocomplete="off" placeholder="Повторите пароль*" type="password" class="input input_repeat-pass">
+						</div>
+
+						<div class="form-reg__radio radio-block">
+							<div class="radio-block__item">
+								<input checked type="radio" id="male" name="sex" value="" required class="checkbox-block__checkbox">
+								<label for="male" class="checkbox-block__label">Мужчина </label>
+							</div>
+							<div class="radio-block__item">
+								<input  type="radio" id="female" name="sex" value="" required class="checkbox-block__checkbox">
+								<label for="female" class="checkbox-block__label">Женщина</label>
+							</div>
+						</div>
+
+						<div class="form__checkbox checkbox-block form-reg__checkbox">
+							<div class="checkbox-block__wrap">
+								<input id="agree" type="checkbox" name="agree" data-value="yes" class="checkbox-block__checkbox" />
+								<label class="checkbox-block__label" for="agree">Я согласен с</label>
+							</div>
+							<a href="" class="form-link__link">
+								<span>Условия и правила</span>
+							</a>
+						</div>
+
+						<button type="submit" class="form__button form-reg__button">
+							<span>
+								Регистрация
+							</span>
+						</button>
+					</form>
+					<div class="block-reg__footer form-link">
+						<span class="form-link__text">У вас нет аккаунта?</span>
+						<a href="" class="form-link__link">
+							<span>Регистрация</span>
+						</a>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="experiments">
+			<p class="experiments__title">Эксперименты</p>
+			<div class='container'>
+				<div class="experiments__body">
+					<div class="experiments__checkbox checkbox-box">
+						<p class="checkbox-box__title">
+							checkbox
+						</p>
+						<form class="checkbox-box__1 checkbox1">
+							<input id="checkbox1" autocomplete="off" type="checkbox" name="" data-value="" class="checkbox-box__input checkbox1__input" />
+							<label for="checkbox1" class="checkbox-box__label checkbox1__label">
+								Нажмите
+								<span class="checkbox1__arr"></span>
+							</label>
+						</form>
+
+						<form class="checkbox-box__2 checkbox2">
+							<input id="checkbox2" autocomplete="off" type="checkbox" name="" data-value="" class="checkbox-box__input checkbox2__input" />
+							<label for="checkbox2" class="checkbox-box__label checkbox2__label">
+								<span class="checkbox1__arr checkbox2__arr"></span>
+							</label>
+						</form>
+
+						<form class="checkbox-box__3 checkbox3">
+							<div class="checkbox3__item">
+								<input id="checkbox3-1" autocomplete="off" type="checkbox" name="" data-value="" class="checkbox-box__input checkbox3__input" />
+								<label for="checkbox3-1" class="checkbox-box__label checkbox3__label">
+								</label>
+							</div>
+							<div class="checkbox3__item">
+								<input id="checkbox3-2" autocomplete="off" type="checkbox" name="" data-value="" class="checkbox-box__input checkbox3__input" />
+								<label for="checkbox3-2" class="checkbox-box__label checkbox3__label">
+								</label>
+							</div>
+						</form>
+
+						<form class="checkbox-box__4 checkbox4">
+								<input id="checkbox4" autocomplete="off" type="checkbox" name="" data-value="" class="checkbox-box__input checkbox4__input" />
+								<label for="checkbox4" class="checkbox-box__label checkbox4__label">
+									<span class="checkbox4__text">Клик</span>
+									<span class="checkbox4__arr"></span>
+								</label>
+						</form>
+
+						<form class="checkbox-box__5 checkbox5">
+								<input id="checkbox5" autocomplete="off" type="checkbox" name="" data-value="" class="checkbox-box__input checkbox5__input" />
+								<label for="checkbox5" class="checkbox-box__label checkbox5__label">
+									<p class="checkbox5__bg bg-item">
+										<span class="bg-item__img bg-item__img_1">
+
+										</span>
+										<span class="bg-item__img bg-item__img_2"></span>
+										<span class="bg-item__img bg-item__img_3"></span>
+										<span class="bg-item__img bg-item__img_4"></span>
+										<span class="bg-item__img bg-item__img_5"></span>
+										<span class="bg-item__img bg-item__img_6"></span>
+										<span class="bg-item__img bg-item__img_7"></span>
+									</p>
+									<p class="checkbox5__circle circle-item">
+										<span class="circle-item__img circle-item__img_1"></span>
+										<span class="circle-item__img circle-item__img_2"></span>
+										<span class="circle-item__img circle-item__img_3"></span>
+									</p>
+								</label>
+						</form>
+					</div>
+
+					<div class="experiments__radio radio-box">
+
+						<p class="radio-box__title">
+							radio
+						</p>
+
+						<form class="radio-box__1 radio1">
+							<div class="radio1__item">
+									<input id="radio1-1" autocomplete="off" type="radio" name="smile" data-value="" class="radio-box__input radio1__input" />
+									<label for="radio1-1" class="radio-box__label radio1__label">
+									</label>
+							</div>
+							<div class="radio1__item">
+									<input checked id="radio1-2" autocomplete="off" type="radio" name="smile" data-value="" class="radio-box__input radio1__input" />
+									<label for="radio1-2" class="radio-box__label radio1__label">
+									</label>
+							</div>
+							<div class="radio1__item">
+									<input id="radio1-3" autocomplete="off" type="radio" name="smile" data-value="" class="radio-box__input radio1__input" />
+									<label for="radio1-3" class="radio-box__label radio1__label">
+									</label>
+							</div>
+						</form>
+					</div>
+
+					<div class="experiments__select select-box">
+						<p class="select-box__title">
+							select
+						</p>
+						<form class="select-box__1 select1">
+								<select name="form[]" id="" class="select1__select">
+									<option value="2">Пункт №2</option>
+									<option value="1">Пункт №1</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+						</form>
+					</div>
+
+					<div class="experiments__file file-box">
+						<p class="file-box__title">
+							file
+						</p>
+						<form class="file-box__1 file1">
+							<input accept=".jpg, .png, .webp" id="file1" autocomplete="off" type="file" name="form[]" data-value="" class="file-box__input file1__input" />
+							<label for="file1" class="file-box__label file1__label">
+								Выберите файл
+							</label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
